@@ -10,3 +10,11 @@
 *.lai
 *.la
 *.a
+
+# Linux Kernel Generated Files
+*.ko
+*.mod.c
+*.cmd
+.tmp_versions
+Module.symvers
+modules.order
