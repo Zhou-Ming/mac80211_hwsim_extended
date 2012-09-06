@@ -14,6 +14,10 @@ ifneq ($(CROSS_COMPILE),)
 CMD += CROSS_COMPILE=$(CROSS_COMPILE)
 endif
 
+ifneq ($(CC),)
+CMD += CC='$(CC)'
+endif
+
 obj-m += mac80211-hwsim-e.o
 
 mac80211-hwsim-e-objs := hwsim_e_device.o
