@@ -3,9 +3,7 @@
 
 struct hlist_head;
 struct spinlock;
-
-typedef struct hwsim_e_table hwsim_e_table_t;
-typedef struct hwsim_e_device hwsim_e_device_t;
+struct class;
 
 struct hwsim_e_table {
   struct hlist_head *buckets;
@@ -13,7 +11,8 @@ struct hwsim_e_table {
 };
 
 struct hwsim_e_device {
-  hwsim_e_table_t interface_table;
+  struct hwsim_e_table interface_table;
+  struct class *class;
 };
 
 #endif /* __HWSIM_E_DEVICE_H__ */

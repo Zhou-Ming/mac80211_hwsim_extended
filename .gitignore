@@ -18,3 +18,7 @@
 .tmp_versions
 Module.symvers
 modules.order
+
+# ctag
+tags
+
